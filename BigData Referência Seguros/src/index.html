@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Datalake Referência</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../src/utils/favicon_datalake.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="page_filters">
+
+    
+    <div class="box">
+      <img src="./utils//img_holding.png" alt="logo referencia" />
+      <header>
+        <p>Faça sua pesquisa no banco de dados usando os filtros abaixo</p>
+      </header>
+
+      <div class="formSearch">
+        <div class="input-wrapper">
+          <label> Atividade Econômica (CNAE) </label>
+          <input
+            type="text"
+            placeholder="6204-0/00 - Consultoria em tecnologia da informação"
+          />
+        </div>
+        <div class="input-wrapper">
+          <label> Razão Social ou Nome Fantasia </label>
+          <input type="text" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-date"> Data de abertura do CNPJ </label>
+          <div class="input-group">
+            <input type="date" id="event-date" />
+            <span>Até</span>
+            <input type="date" id="event-date" />
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label> Estado </label>
+          <input type="text" placeholder="Ex: Distrito Federal" />
+        </div>
+        <div class="input-wrapper">
+          <label> Cidade </label>
+          <input type="text" placeholder="Ex: Brasília" />
+        </div>
+        <div class="input-wrapper">
+          <label> Bairro </label>
+          <input type="text" placeholder="Ex: Águas Claras" />
+        </div>
+        <div class="input-wrapper">
+          <label> Situação Cadastral </label>
+          <input type="text" placeholder="ATIVA" />
+        </div>
+        <div class="input-wrapper">
+          <label> Faturamento e Colaboradores </label>
+          <input type="text" />
+        </div>
+        <div class="input-wrapper">
+          <label> Capital Social </label>
+          <input type="text" />
+        </div>
+        <div class="input-wrapper">
+          <label> Matriz e Filiais </label>
+          <select name="Matriz e Filiais" id="1">
+            <option value="TODAS">TODAS</option>
+            <option value="FILIAIS">FILIAIS</option>
+            <option value="MATRIZ">MATRIZ</option>
+          </select>
+        </div>
+        <div class="input-wrapper">
+          <label> Porte da Empresa </label>
+          <select name="Porte da Empresa" id="1">
+            <option value="TODAS">TODAS</option>
+            <option value="MICRO EMPRESA">MICRO EMPRESA</option>
+            <option value="PEQUENO PORTE">PEQUENO PORTE</option>
+            <option value="MÉDIO/GRANDE">MÉDIO/GRANDE</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="submit">
+        <button type="submit">
+          Pesquisar no banco de dados
+          <img src="./utils/search.svg" alt="nuvem" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

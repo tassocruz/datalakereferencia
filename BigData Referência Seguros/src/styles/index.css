@@ -1,0 +1,150 @@
+body {
+  background: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 80px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #191919;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: -10px auto 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: -70px;
+  color: white;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  margin-bottom: 55px;
+  color: #394867;
+  font-size: 24px;
+}
+
+.formSearch {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: stretch;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #f1f6f9;
+}
+
+input,
+select {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #404040;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #f1f6f9;
+  background-color: transparent;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+  font-size: 10px;
+}
+
+span {
+  color: #f1f6f9;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="date"]#event-date {
+  width: 120px;
+}
+
+select {
+  background-position: right 10px center;
+  background-size: 16px;
+  padding-right: 30px;
+  border: 1px solid #394867;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #f1f6f9;
+  background-color: #394867;
+}
+
+select option {
+  font-size: 16px;
+  color: #f1f6f9;
+  background-color: #212a3e;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background: #242424;
+  border-radius: 24px;
+  outline: none;
+  font-weight: bold;
+  color: white;
+  transition: 0.25s;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+button[type="submit"]:hover {
+  background: #084dcc;
+}
+
+button[type="submit"] img {
+  width: 30px;
+  margin-top: 2.5px;
+  margin-left: 10px;
+}
