@@ -19,63 +19,64 @@
   </head>
 
   <body class="page_filters">
-
-    
     <div class="box">
       <img src="./utils//img_holding.png" alt="logo referencia" />
       <header>
         <p>Faça sua pesquisa no banco de dados usando os filtros abaixo</p>
       </header>
-
+  
       <div class="formSearch">
         <div class="input-wrapper">
           <label> Atividade Econômica (CNAE) </label>
-          <input
-            type="text"
-            placeholder="6204-0/00 - Consultoria em tecnologia da informação"
-          />
+          <input id="cnae" type="text" placeholder="6204-0/00 - Consultoria em tecnologia da informação" />
         </div>
         <div class="input-wrapper">
-          <label> Razão Social ou Nome Fantasia </label>
-          <input type="text" />
+          <label> CNPJ </label>
+          <input id="cnpj" type="text" placeholder="00.000.000/0000-00" />
         </div>
-
         <div class="input-wrapper">
-          <label for="event-date"> Data de abertura do CNPJ </label>
+          <label> Razão Social </label>
+          <input id="razaoSocial" type="text" />
+        </div>
+        <div class="input-wrapper">
+          <label> Nome Fantasia </label>
+          <input id="nomeFantasia" type="text" />
+        </div>
+        <div class="input-wrapper">
+          <label for="dataAberturaInicio"> Data de abertura do CNPJ </label>
           <div class="input-group">
-            <input type="date" id="event-date" />
+            <input type="date" id="dataAberturaInicio" />
             <span>Até</span>
-            <input type="date" id="event-date" />
+            <input type="date" id="dataAberturaFim" />
           </div>
         </div>
-
         <div class="input-wrapper">
           <label> Estado </label>
-          <input type="text" placeholder="Ex: Distrito Federal" />
+          <input id="estado" type="text" placeholder="Ex: Distrito Federal" />
         </div>
         <div class="input-wrapper">
           <label> Cidade </label>
-          <input type="text" placeholder="Ex: Brasília" />
+          <input id="cidade" type="text" placeholder="Ex: Brasília" />
         </div>
         <div class="input-wrapper">
           <label> Bairro </label>
-          <input type="text" placeholder="Ex: Águas Claras" />
+          <input id="bairro" type="text" placeholder="Ex: Águas Claras" />
         </div>
         <div class="input-wrapper">
           <label> Situação Cadastral </label>
-          <input type="text" placeholder="ATIVA" />
+          <input id="situacaoCadastral" type="text" placeholder="ATIVA" />
         </div>
         <div class="input-wrapper">
           <label> Faturamento e Colaboradores </label>
-          <input type="text" />
+          <input id="faturamentoColaboradores" type="text" />
         </div>
         <div class="input-wrapper">
           <label> Capital Social </label>
-          <input type="text" />
+          <input id="capitalSocial" type="text" />
         </div>
         <div class="input-wrapper">
           <label> Matriz e Filiais </label>
-          <select name="Matriz e Filiais" id="1">
+          <select id="matrizFiliais" name="Matriz e Filiais">
             <option value="TODAS">TODAS</option>
             <option value="FILIAIS">FILIAIS</option>
             <option value="MATRIZ">MATRIZ</option>
@@ -83,7 +84,7 @@
         </div>
         <div class="input-wrapper">
           <label> Porte da Empresa </label>
-          <select name="Porte da Empresa" id="1">
+          <select id="porteEmpresa" name="Porte da Empresa">
             <option value="TODAS">TODAS</option>
             <option value="MICRO EMPRESA">MICRO EMPRESA</option>
             <option value="PEQUENO PORTE">PEQUENO PORTE</option>
@@ -91,13 +92,11 @@
           </select>
         </div>
       </div>
-
+  
       <div class="submit">
-        <button type="submit">
-          Pesquisar no banco de dados
+        <button id="button" type="button">Pesquisar no Banco de Dados 
           <img src="./utils/search.svg" alt="nuvem" />
         </button>
-      </div>
-    </div>
-  </body>
+  
+        <script src="index.js" type="module" ></script>
 </html>

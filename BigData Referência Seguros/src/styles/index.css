@@ -1,5 +1,5 @@
 body {
-  background: #242424;
+  background: #242323;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,14 +12,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #191919;
+  background: #2e2e2e;
+  padding-bottom: 40px;
 }
 
 img {
   display: flex;
   justify-content: center;
-  width: 250px;
-  margin: -10px auto 0;
+  width: 150px;
+  margin: 0 auto 20px;
 }
 
 .header {
@@ -37,7 +38,7 @@ p {
   justify-content: center;
   margin-top: -35px;
   margin-bottom: 55px;
-  color: #394867;
+  color: white;
   font-size: 24px;
 }
 
@@ -54,8 +55,10 @@ p {
 }
 
 .input-wrapper {
+  width:30%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   gap: 10px;
 }
 
@@ -69,7 +72,7 @@ select {
   display: flex;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #404040;
+  border: 1px solid #646060;
   border-radius: 5px;
   font-size: 16px;
   color: #f1f6f9;
@@ -99,11 +102,11 @@ select {
   background-position: right 10px center;
   background-size: 16px;
   padding-right: 30px;
-  border: 1px solid #394867;
+  border: 1px solid #286fad;
   border-radius: 5px;
   font-size: 16px;
   color: #f1f6f9;
-  background-color: #394867;
+  background-color: #286fad;
 }
 
 select option {
@@ -118,7 +121,7 @@ select option {
   justify-content: center;
 }
 
-button[type="submit"] {
+button[type="button"] {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,7 +132,7 @@ button[type="submit"] {
   margin-top: 20px;
   margin-bottom: 20px;
   border: none;
-  background: #242424;
+  background: #286fad;
   border-radius: 24px;
   outline: none;
   font-weight: bold;
@@ -139,12 +142,12 @@ button[type="submit"] {
   padding: 15px 25px;
 }
 
-button[type="submit"]:hover {
-  background: #084dcc;
+button[type="button"]:hover {
+  color: rgb(255, 255, 255);
+  background: #1d75c2;
 }
 
-button[type="submit"] img {
+button[type="button"] img {
   width: 30px;
-  margin-top: 2.5px;
-  margin-left: 10px;
 }
+
